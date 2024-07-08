@@ -1,29 +1,16 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import { AppBar } from "../AppBar"
-export const Signup = () => {
+export const Signin = () => {
     const navigate = useNavigate();
     return (
         <div>
             <div className = 'bg-slate-100 min-h-screen'>
                 <AppBar />
                 <div className = 'p-32'>
-                    <div className = 'flex justify-center text-4xl font-bold pb-2'>Sign up for free 🤗</div>
-                    <div className = 'flex justify-center text-xl text-gray-600 pl-2'>You will get 2 video and 10 text testimonial credits for FREE!</div>
+                    <div className = 'flex justify-center text-4xl font-bold pb-2'>Welcome Back 👋</div>
                     <div className = 'flex justify-center p-10'>
                         <div className = 'bg-white h-58 rounded-lg p-10'>
-                            <p className = 'text-gray-600 pl-16 pb-2 font-semibold'>Register with your Email</p>
-                            <div className = 'flex text-gray-500 space-x-2'>
-                                <input type = 'checkbox'></input>
-                                <p>Please accept all the terms and conditions</p>
-                                <p className = 'text-red-500'>*</p>
-                            </div>
-                            <div>
-                                <div className = 'flex p-2 pl-0'>
-                                    <p className = 'text-gray-500'>First name</p>
-                                    <p className = 'text-red-500'>*</p>
-                                </div>
-                                <input type = 'text' placeholder="Your first name" className = 'border border-black hover:border-blue-600 w-80 p-1'></input>
-                            </div>
+                            <p className = 'text-gray-600 pl-20 pb-2 font-semibold'>Signin with your Email</p>
                             <div>
                                 <div className = 'flex p-2 pl-0'>
                                     <p className = 'text-gray-500'>Email</p>
@@ -40,10 +27,10 @@ export const Signup = () => {
                             </div>
                             <button className = 'text-white bg-blue-600 hover:bg-blue-700 rounded-lg p-2 w-80'>Sign up</button>
                             <div className = 'flex pl-10 pt-2 space-x-2'>
-                                <p>Already have an account?</p>
+                                <p>Don't have the account?</p>
                                 <button className = 'underline underline-ofset-2 text-blue-500' onClick = {() => {
-                                    navigate('/signin');
-                                }}>Signin</button>
+                                    navigate('/signup');
+                                }}>Signup</button>
                             </div>
                         </div>
                     </div>
