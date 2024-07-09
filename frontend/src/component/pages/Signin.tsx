@@ -1,7 +1,23 @@
 import { useNavigate } from "react-router-dom";
 import { AppBar } from "../AppBar"
+import axios from "axios";
+import { useState } from "react";
+
 export const Signin = () => {
     const navigate = useNavigate();
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const submitHandler = async () => {
+        try {
+            await axios.post('http://localhost:3000/users/signin', {
+                email: email,
+                password: password
+            })
+            navigate('/dashboard');
+        }catch(error) {
+            console.log("password is wrong");
+        }
+    }
     return (
         <div>
             <div className = 'bg-slate-100 min-h-screen'>
@@ -16,16 +32,20 @@ export const Signin = () => {
                                     <p className = 'text-gray-500'>Email</p>
                                     <p className = 'text-red-500'>*</p>
                                 </div>
-                                <input type = 'text' placeholder="you@gmail.com" className = 'border border-black hover:border-blue-600 w-80 p-1'></input>
+                                <input type = 'text' placeholder="you@gmail.com" onChange = {(e) => {
+                                    setEmail(e.target.value);
+                                }} className = 'border border-black hover:border-blue-600 w-80 p-1'></input>
                             </div>
                             <div className = 'pb-4'>
                                 <div className = 'flex p-2 pl-0'>
                                     <p className = 'text-gray-500'>password</p>
                                     <p className = 'text-red-500'>*</p>
                                 </div>
-                                <input type = 'text' placeholder="Password" className = 'border border-black hover:border-blue-600 w-80 p-1'></input>
+                                <input type = 'password' placeholder="Password" onChange={(e) => {
+                                    setPassword(e.target.value);
+                                }} className = 'border border-black hover:border-blue-600 w-80 p-1'></input>
                             </div>
-                            <button className = 'text-white bg-blue-600 hover:bg-blue-700 rounded-lg p-2 w-80'>Sign up</button>
+                            <button onClick = { submitHandler } className = 'text-white bg-blue-600 hover:bg-blue-700 rounded-lg p-2 w-80'>Sign in</button>
                             <div className = 'flex pl-10 pt-2 space-x-2'>
                                 <p>Don't have the account?</p>
                                 <button className = 'underline underline-ofset-2 text-blue-500' onClick = {() => {

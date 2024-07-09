@@ -1,4 +1,9 @@
-export const DashboardCard = () => {
+interface props {
+    question1: string,
+    question2: string,
+    question3: string
+}
+export const DashboardCard: React.FC<props> = ({ question1, question2, question3}) => {
     return (
         <div className = 'flex justify-center p-8'>
             <div className = 'border border-gray-300 border-solid rounded-lg w-96 p-5'>
@@ -11,9 +16,18 @@ export const DashboardCard = () => {
                 <div className = 'flex justify-center text-gray-400 pb-2'>Your customer Message goes over here...</div>
                 <div className = 'font-semibold text-slate-700'>QUESTIONS</div>
                 <div className = 'p-2'>
-                    <div>*</div>
-                    <div>*</div>
-                    <div>*</div>
+                    <div className = 'flex space-x-2 text-sm'>
+                        <div>*</div>
+                        <div>{question1}</div>
+                    </div>
+                    <div className = 'flex space-x-2 text-sm'>
+                        <div>*</div>
+                        <div>{question2}</div>
+                    </div>
+                    <div className = 'flex space-x-2 text-sm'>
+                        <div>*</div>
+                        <div>{question3}</div>
+                    </div>
                 </div>
                 <div className = 'p-2'>
                     <div className = 'flex space-x-2 justify-center h-12 w-94 text-center bg-blue-500 hover:bg-blue-600 rounded-md p-3 text-white'>
