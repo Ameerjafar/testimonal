@@ -3,21 +3,23 @@ import { DashboardCard } from "./DashboardCard"
 import axios from "axios";
 export const Dashboard = () => {
     const [spaceName, setSpaceName] = useState("");
-    const [HeaderTitle, setHeaderTitle] = useState("");
+    const [headerTitle, setHeaderTitle] = useState("");
     const [customMessage, setCustomMessage] = useState("");
     const [question1, setQustion1] = useState("Who are you/ what are you working on?");
     const [question2, setQustion2] = useState("Who are you/ what are you working on?");
     const [question3, setQustion3] = useState("How has [our product / service] helped you?");
     const submitHandler = async () => {
         try {
-            const res = await axios.post('http://localhost:3000/users/dashboard', {
+            await axios.post('http://localhost:3000/users/dashboard', {
                 spaceName, 
-                HeaderTitle,
+                headerTitle,
                 customMessage,
-                question1,
-                question2,
-                question3
+                Question1: question1,
+                Question2: question2,
+                Question3: question3
             })
+            console.log("hello");
+
         }catch(error) {
             console.log(error);
         }
