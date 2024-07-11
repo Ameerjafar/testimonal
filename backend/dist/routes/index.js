@@ -6,10 +6,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const signup_1 = __importDefault(require("../middleware/signup"));
 const Signin_1 = __importDefault(require("../middleware/Signin"));
+const dashboardMiddleware_1 = __importDefault(require("../middleware/dashboardMiddleware"));
+const mailHandler_1 = require("../middleware/mailHandler");
 const router = express_1.default.Router();
 const app = (0, express_1.default)();
 router.post('/signup', signup_1.default, (req, res) => {
 });
 router.post('/signin', Signin_1.default, (req, res) => {
+});
+router.post('/dashboard', dashboardMiddleware_1.default, (req, res) => {
+});
+router.post('/email', mailHandler_1.mainHandler, (req, res) => {
 });
 exports.default = router;

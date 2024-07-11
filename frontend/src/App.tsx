@@ -5,6 +5,7 @@ import { Signup } from "./component/pages/Signup"
 import { Signin } from "./component/pages/Signin"
 import { Dashboard } from "./component/pages/Dashboard"
 import { UserPageComponent } from "./component/pages/UserPageComponent"
+import { EmailSender } from "./component/EmailSender"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path = '/signin' element={<Signin />} />
           <Route path = '/dashboard' element={<Dashboard />}/>
           <Route path = '/userpage' element = {<UserPageComponent/>} />
+          <Route path = '/email' element = {<EmailSender />} />
         </Routes>
       </BrowserRouter>
     </>

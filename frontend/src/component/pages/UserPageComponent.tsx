@@ -46,14 +46,20 @@ export const UserPageComponent = () => {
                         </iframe>
                     </div> 
                 </div>
-                <div className = 'px-40'>
+                <div className = 'px-40 pl-64'>
                     <hr className = 'text-gray-800'></hr>
                 </div>
-                <div className = 'pl-40'>
-                    <div className = 'text-4xl font-bold pt-2'>Overview</div>
-                    <div className = 'flex'>
-                        <div className = 'w-32 h-8 border-2'>videos</div>
-                        <div>video credits</div>
+                <div className = 'pl-64'>
+                    <div className = 'text-4xl font-bold pt-5'>Overview</div>
+                    <div className = 'flex p-2 pl-0 space-x-10'>
+                        <div className = 'w-72 h-24 bg-white h-8 border-4 p-4 border-white rounded-lg'>videos</div>
+                        <div className = 'w-72 h-24 bg-white h-8 border-4 p-4 border-white rounded-lg'>video credits</div>
+                    </div>
+                </div>
+                <div className = ''>
+                    <div className = 'flex justify-between pr-40 pl-64 pb-40'>
+                        <div className = 'text-4xl font-bold pt-2'>Spaces</div>
+                        <button className = 'bg-blue-500 hover:bg-blue-600 rounded-md text-white p-2 font-semibold'>+ Create a new space</button>
                     </div>
                 </div>
             </div>
