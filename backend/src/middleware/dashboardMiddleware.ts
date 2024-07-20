@@ -17,7 +17,7 @@ const dashboardMiddlerware = async (req: Request, res: Response) => {
         })
         res.json({message: "data added successfully in the database"});
     }catch(error) {
-        res.json({message: "data not added successfully"});
+        res.json({message: "data not added successfully"}); 
     }
 }
 export default dashboardMiddlerware;
