@@ -23,6 +23,7 @@ const signinMiddleware = async (req: Request, res: Response) => {
     console.log(verify1);
     if(verify.success === true && verify1 !== null) {
         res.json({message: "This is email is verified"});
+
     }
     else {
         res.json({message: "This email is not verified"});
