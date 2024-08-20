@@ -18,7 +18,6 @@ export const Dashboard = () => {
                 Question2: question2,
                 Question3: question3
             })
-            console.log("hello");
 
         }catch(error) {
             console.log(error);
@@ -64,7 +63,7 @@ export const Dashboard = () => {
                                 <p>Your custom message</p>
                                 <p className = 'text-red-500'>*</p>
                             </div>
-                            <input type = 'textarea' onChange = {(e) => {setCustomMessage(e.target.value)}} placeholder="Write the warm welcome to the customers and give them simple direction on how to make the best testimonals" className = 'border border-black hover:border-blue-600 w-full rounded-lg border-gray-300 h-32'></input>
+                            <input type = 'textarea' onChange = {(e) => {setCustomMessage(e.target.value)}} placeholder="Write the warm welcome to the customers and give them simple direction on how to make the best testimonals" className = 'border border-black hover:border-blue-600 w-full rounded-lg border-gray-300 h-32 text-start'></input>
                         </div>
                         <div>
                             <div className = 'p-1'>Questions</div>

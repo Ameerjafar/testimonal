@@ -1,19 +1,18 @@
 import { AppBar } from "./AppBar"
-import { useNavigate } from "react-router-dom"
-export const CenterContent = () => {
-    const navigate = useNavigate();
+import TrustedPartners from "./pages/TrustedPartners"
+export const Hero = () => {
     return (
         <div>
             <AppBar />
-            <div className = 'p-32 pb-0 text-6xl font-medium'>
-                <div className = 'flex justify-center'>
+            <div className = 'pt-16 text-5xl font-bold'>
+                <div className = 'flex justify-center md:container md:mx-auto'>
                     Get testimonials from your
                 </div>
                 <div className = 'flex justify-center'>
                     Customers with ease
                 </div>
             </div>
-            <div className = 'pt-10 text-xl text-gray-600'>
+            <div className = 'pt-5 text-center sm:text-lg md:text-xs md:container md:mx-auto lg:text-xl text-gray-600'>
                 <div className = 'flex justify-center p-1'>Collecting testimonials is hard, we get it! So we built Testimonials in minutes, you can collect text</div>
                 <div className = 'flex justify-center p-1 pb-3'>and video testimonials from your customers with no need for a developer or website hosting.</div>
             </div>
@@ -27,6 +26,10 @@ export const CenterContent = () => {
                 </div>
                 <button className = 'font-semibold underline underline-offset-5'>See our pricing</button>
             </div>
+            <div className = 'flex justify-center pt-6'>
+                <video className = 'rounded-md w-3/4 h-1/2' src = "https://stream.mux.com/Woifb2gxZArCOh2z1aPMW901UdR9pSeF5Dhx6kaEVZYc/high.mp4"></video>
+            </div>
+            <TrustedPartners />
         </div>
     )
 }
