@@ -1,5 +1,7 @@
 import { AppBar } from "./AppBar"
+import FeedBackComponent from "./FeedbackComponent"
 import TrustedPartners from "./pages/TrustedPartners"
+import WebsiteFeature from "./WebsiteFeature"
 export const Hero = () => {
     return (
         <div>
@@ -16,7 +18,7 @@ export const Hero = () => {
                 <div className = 'flex justify-center p-1'>Collecting testimonials is hard, we get it! So we built Testimonials in minutes, you can collect text</div>
                 <div className = 'flex justify-center p-1 pb-3'>and video testimonials from your customers with no need for a developer or website hosting.</div>
             </div>
-            <div className = 'flex justify-center p-2 space-x-4'>
+            <div className = 'flex justify-center p-2 space-x-5'>
                 <button className = 'h-12 w-36 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold text-center'>Try FREE now</button>
                 <button className = 'h-12 w-52 rounded-lg font-semibold text-center border-2 border-blue-600 hover:border-blue-800 text-gray-600'>Talk to us</button>
             </div>
@@ -30,6 +32,8 @@ export const Hero = () => {
                 <video className = 'rounded-md w-3/4 h-1/2' src = "https://stream.mux.com/Woifb2gxZArCOh2z1aPMW901UdR9pSeF5Dhx6kaEVZYc/high.mp4"></video>
             </div>
             <TrustedPartners />
+            <FeedBackComponent />
+            <WebsiteFeature />
         </div>
     )
 }
