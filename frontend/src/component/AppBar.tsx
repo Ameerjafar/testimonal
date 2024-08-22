@@ -8,7 +8,7 @@ export const AppBar = () => {
                 <button className = 'flex space-x-2' onClick = {() => {navigate('/')}}>
                     <img loading="lazy" className = 'h-10' src="https://testimonial.to/static/media/logo-dark.8447f219.svg" alt="Logo"></img>
                 </button>
-                <div className = 'hidden md:block  flex space-x-10 font-semibold text-slate-700 text-lg'>
+                <div className = 'hidden md:block flex space-x-10 font-semibold text-slate-700 text-lg'>
                     <button>Customers</button>
                     <button>Features</button>
                     <button>Integration</button>

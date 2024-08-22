@@ -1,4 +1,6 @@
+import AnyPlatform from "./AnyPlatform"
 import { AppBar } from "./AppBar"
+import CollectTestimonial from "./CollectTestimonial"
 import FeedBackComponent from "./FeedbackComponent"
 import TrustedPartners from "./pages/TrustedPartners"
 import WebsiteFeature from "./WebsiteFeature"
@@ -34,6 +36,8 @@ export const Hero = () => {
             <TrustedPartners />
             <FeedBackComponent />
             <WebsiteFeature />
+            <AnyPlatform />
+            <CollectTestimonial />
         </div>
     )
 }
