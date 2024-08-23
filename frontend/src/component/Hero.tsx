@@ -4,6 +4,7 @@ import CollectTestimonial from "./CollectTestimonial"
 import FeedBackComponent from "./FeedbackComponent"
 import TrustedPartners from "./pages/TrustedPartners"
 import WebsiteFeature from "./WebsiteFeature"
+import Footer from './Footer'
 export const Hero = () => {
     return (
         <div>
@@ -38,6 +39,7 @@ export const Hero = () => {
             <WebsiteFeature />
             <AnyPlatform />
             <CollectTestimonial />
+            <Footer />
         </div>
     )
 }
