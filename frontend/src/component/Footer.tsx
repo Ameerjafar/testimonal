@@ -2,6 +2,33 @@ import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
     const navigate = useNavigate();
+    const product: string[] = [
+        "Our Wall of Love", 
+        "Chrome extension", 
+        "Slack app", 
+        "Hopin app", 
+        "Pricing",
+        "Features",
+        "Integrations",
+        "Help center"
+    ]
+    const company: string[] = [
+        "Our resources",
+        "Tutorials",
+        "Customer stories",
+        "Join affiliate program",
+        "Privacy policy",
+        "Terms of Service",
+        "Cookie policy",
+        "DPA (GDPR)"
+    ]
+    const customers: string[] = [
+        "Agencies",
+        "B2B companies",
+        "Course creators",
+        "eCommerce",
+        "Consumer apps"
+    ]
     return (
         <div className = 'bg-gray-50 pt-10 pr-32 pl-10'>
             <div className = 'flex justify-center space-x-32 pt-3 pr-36'>
@@ -20,31 +47,25 @@ const Footer = () => {
                     <div className = 'pl-20 text-gray-500'> and video testimonials from your customers</div>
                 </div>
                 <div className = 'pl-4'>
-                    <p className = 'pl-12 text-gray-500'>Our Wall of Love</p>
-                    <p className = 'pl-12 text-gray-500'>Chrome extension</p>
-                    <p className = 'pl-12 text-gray-500'>Slack app</p>
-                    <p className = 'pl-12 text-gray-500'>Hopin app</p>
-                    <p className = 'pl-12 text-gray-500'>Pricing</p>
-                    <p className = 'pl-12 text-gray-500'>Features</p>
-                    <p className = 'pl-12 text-gray-500'>Integrations</p>
-                    <p className = 'pl-12 text-gray-500'>Help center</p>
+                    {
+                        product.map((prod, ind) => {
+                            return <p key={ind} className = 'pl-12 text-gray-500'>{prod}</p>
+                        })
+                    }
                 </div>
                 <div className = 'pl-5'>
-                    <p className = 'pl-12 text-gray-500'>Our resources</p>
-                    <p className = 'pl-12 text-gray-500'>Tutorials</p>
-                    <p className = 'pl-12 text-gray-500'>Customer stories</p>
-                    <p className = 'pl-12 text-gray-500'>Join affiliate program</p>
-                    <p className = 'pl-12 text-gray-500'>Privacy policy</p>
-                    <p className = 'pl-12 text-gray-500'>Terms of Service</p>
-                    <p className = 'pl-12 text-gray-500'>Cookie policy</p>
-                    <p className = 'pl-12 text-gray-500'>DPA (GDPR)</p>
+                    {
+                        company.map((com, ind) => {
+                            return <p key={ind} className = 'pl-12 text-gray-500'>{com}</p>
+                        })
+                    }
                 </div>
                 <div className = 'pl-1'>
-                    <p className = 'pl-12 text-gray-500'>Agencies</p>
-                    <p className = 'pl-12 text-gray-500'>B2B companies</p>
-                    <p className = 'pl-12 text-gray-500'>Course creators</p>
-                    <p className = 'pl-12 text-gray-500'>eCommerce</p>
-                    <p className = 'pl-12 text-gray-500'>Consumer apps</p>
+                    {
+                        customers.map((cus, ind) => {
+                            return <p key = {ind} className = 'pl-12 text-gray-500'>{cus}</p>
+                        })
+                    }
                 </div>
                 <a className = 'pl-24' href = "https://www.youtube.com/watch?v=28FX7u51v2U&feature=youtu.be">
                     <img className = 'rounded-lg w-52' src = "https://imagedelivery.net/pcavElAZUUevXK53Dl4vWA/27ef1a67-9a88-4276-cc9d-21270c344100/public"></img>
