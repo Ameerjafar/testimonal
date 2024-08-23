@@ -8,17 +8,19 @@ export const Hero = () => {
     return (
         <div>
             <AppBar />
-            <div className = 'pt-16 text-5xl font-bold'>
-                <div className = 'flex justify-center md:container md:mx-auto'>
+            <div className = 'pt-16 font-bold text-2xl md:text-4xl lg:text-5xl'>
+                <div className = 'flex justify-center'>
                     Get testimonials from your
                 </div>
                 <div className = 'flex justify-center'>
                     Customers with ease
                 </div>
             </div>
-            <div className = 'pt-5 text-center sm:text-lg md:text-xs md:container md:mx-auto lg:text-xl text-gray-600'>
-                <div className = 'flex justify-center p-1'>Collecting testimonials is hard, we get it! So we built Testimonials in minutes, you can collect text</div>
-                <div className = 'flex justify-center p-1 pb-3'>and video testimonials from your customers with no need for a developer or website hosting.</div>
+            <div className = 'mx-auto max-w-4xl pt-5 text-center text-xl text-gray-600'>
+                <div className = 'flex justify-center p-1'>
+                    Collecting testimonials is hard, we get it! So we built Testimonials in minutes, you can collect text
+                    and video testimonials from your customers with no need for a developer or website hosting.
+                </div>
             </div>
             <div className = 'flex justify-center p-2 space-x-5'>
                 <button className = 'h-12 w-36 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold text-center'>Try FREE now</button>

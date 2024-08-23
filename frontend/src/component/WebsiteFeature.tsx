@@ -2,8 +2,8 @@ const WebsiteFeature = () => {
     return (
         <div className = 'bg-gradient-to-b from-yellow-50 w-full'>
             <div className="pt-10 ">
-                <div className = 'flex justify-center text-5xl font-bold'>Collect and display testimonials all in</div>
-                <div className = 'flex justify-center text-5xl font-bold pt-2'>One Solution</div>
+                <div className = 'flex justify-center font-bold text-2xl md:text-3xl lg:text-5xl'>Collect and display testimonials all in</div>
+                <div className = 'flex justify-center text-2xl md:text-3xl lg:text-5xl font-bold pt-2'>One Solution</div>
             </div>
             <div className = 'flex justify-center space-x-24 pr-20'>
                 <div className = 'pt-32'>
