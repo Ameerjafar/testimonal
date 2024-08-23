@@ -30,7 +30,7 @@ const Footer = () => {
         "Consumer apps"
     ]
     return (
-        <div className = 'bg-gray-50 pt-10 pr-32 pl-10'>
+        <div className = 'bg-gray-50 pt-10 pr-32 pl-10 pb-10'>
             <div className = 'flex justify-center space-x-32 pt-3 pr-36'>
                 <button className = 'flex space-x-2' onClick = {() => {navigate('/')}}>
                         <img loading="lazy" className = 'h-10' src="https://testimonial.to/static/media/logo-dark.8447f219.svg" alt="Logo"></img>

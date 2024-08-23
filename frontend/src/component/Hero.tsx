@@ -1,7 +1,6 @@
 import AnyPlatform from "./AnyPlatform"
 import { AppBar } from "./AppBar"
 import CollectTestimonial from "./CollectTestimonial"
-import FeedBackComponent from "./FeedbackComponent"
 import TrustedPartners from "./pages/TrustedPartners"
 import WebsiteFeature from "./WebsiteFeature"
 import Footer from './Footer'
@@ -35,7 +34,6 @@ export const Hero = () => {
                 <video className = 'rounded-md w-3/4 h-1/2' src = "https://stream.mux.com/Woifb2gxZArCOh2z1aPMW901UdR9pSeF5Dhx6kaEVZYc/high.mp4"></video>
             </div>
             <TrustedPartners />
-            <FeedBackComponent />
             <WebsiteFeature />
             <AnyPlatform />
             <CollectTestimonial />
