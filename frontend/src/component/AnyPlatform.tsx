@@ -1,9 +1,9 @@
 const AnyPlatform = () => {
     return (
-        <div className = 'bg-gradient-to-b from-gray-50 mt-20 p-10'>
-            <p className = 'flex justify-center text-5xl opacity-90 font-bold '>Integrate with any platform</p>
-            <p className = 'flex justify-center text-xl pt-4 text-black opacity-90'>We built the ultimate tool for showcasing your satisfied customers. With 3-lines of HTML code, </p>
-            <p className = 'flex justify-center text-xl pt-1 text-black opacity-90'>you can embed all your testimonials to any platform!</p>
+        <div className = 'bg-gradient-to-b from-gray-50 mt-20 md:p-10'>
+            <p className = 'flex justify-center md:flex text-4xl pt-10 md:text-5xl opacity-90 font-bold'>Integrate with any platform</p>
+            <p className = 'flex justify-center text-sm md:text-xl pt-4 text-black opacity-90'>We built the ultimate tool for showcasing your satisfied customers. With 3-lines of HTML code, </p>
+            <p className = 'flex justify-center text-sm md:text-xl pt-1 text-black opacity-90'>you can embed all your testimonials to any platform!</p>
             <div className = 'flex justify-center pt-10 space-x-5'>
                 <div className = 'flex justify-center p-4 border-2 rounded-lg border-black w-56'>
                     <img className='h-10 w-40' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-yOWkQ91KbyGOAG7hAlAfOwAMJ47bd82gQ&s"></img>
