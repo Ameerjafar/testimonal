@@ -11,7 +11,7 @@ export const AppBar = () => {
 
     return (
         <div className="w-full bg-white shadow-md">
-            <div className="flex justify-between items-center py-4 px-4 md:px-8">
+            <div className="flex justify-between items-center py-4 px-4 lg:px-8">
                 <button className="flex items-center space-x-2" onClick={() => navigate("/")}>
                     <img
                         loading="lazy"
@@ -21,7 +21,7 @@ export const AppBar = () => {
                     />
                 </button>
 
-                <div className="hidden md:flex space-x-10 font-semibold text-slate-700 text-lg">
+                <div className="hidden lg:flex space-x-10 font-semibold text-slate-700 text-lg">
                     <button>Customers</button>
                     <button>Features</button>
                     <button>Integration</button>
@@ -29,7 +29,7 @@ export const AppBar = () => {
                 </div>
 
                 {/* Desktop Auth Buttons */}
-                <div className="hidden md:flex space-x-4">
+                <div className="hidden lg:flex space-x-4">
                     <button
                         className="font-medium text-slate-700"
                         onClick={() => navigate("/signin")}
@@ -45,7 +45,7 @@ export const AppBar = () => {
                 </div>
 
                 {/* Mobile Menu Button */}
-                <div className="md:hidden">
+                <div className="lg:hidden">
                     <button onClick={toggleMobileMenu}>
                         {/* {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />} */}
                     </button>
@@ -53,7 +53,7 @@ export const AppBar = () => {
             </div>
 
             {isMobileMenuOpen && (
-                <div className="md:hidden px-4 pb-4 space-y-4">
+                <div className="lg:hidden px-4 pb-4 space-y-4">
                     <div className="flex flex-col space-y-2 font-semibold text-slate-700 text-lg">
                         <button onClick={() => setIsMobileMenuOpen(false)}>Customers</button>
                         <button onClick={() => setIsMobileMenuOpen(false)}>Features</button>

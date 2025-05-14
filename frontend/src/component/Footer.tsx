@@ -31,9 +31,9 @@ const Footer = () => {
     ];
 
     return (
-        <div className="bg-gray-50 p-6 md:px-20 md:py-10">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-start space-y-6 md:space-y-0">
-                <div className="flex flex-col items-center md:items-start space-y-2">
+        <div className="bg-gray-50 p-6 lg:px-20 lg:py-10">
+            <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start space-y-6 lg:space-y-0">
+                <div className="flex flex-col items-center lg:items-start space-y-2">
                     <button className="flex items-center" onClick={() => navigate("/")}>
                         <img
                             loading="lazy"
@@ -42,34 +42,35 @@ const Footer = () => {
                             alt="Logo"
                         />
                     </button>
-                    <div className = 'md:w-52'>
-                    <p className="text-gray-500 text-center md:text-left ">
-                        The easiest solution to getting text and video testimonials from your customers
-                    </p>
+                    <div className='lg:w-52'>
+                        <p className="text-gray-500 text-center lg:text-left">
+                            The easiest solution to getting text and video testimonials from your customers
+                        </p>
                     </div>
                 </div>
-                <div className="text-center md:text-left">
+                
+                <div className="text-center lg:text-left">
                     <p className="font-semibold mb-2">Products</p>
                     {product.map((prod, ind) => (
                         <p key={ind} className="text-gray-500">{prod}</p>
                     ))}
                 </div>
 
-                <div className="text-center md:text-left">
+                <div className="text-center lg:text-left">
                     <p className="font-semibold mb-2">Company</p>
                     {company.map((com, ind) => (
                         <p key={ind} className="text-gray-500">{com}</p>
                     ))}
                 </div>
 
-                <div className="text-center md:text-left">
+                <div className="text-center lg:text-left">
                     <p className="font-semibold mb-2">Customers</p>
                     {customers.map((cus, ind) => (
                         <p key={ind} className="text-gray-500">{cus}</p>
                     ))}
                 </div>
 
-                <div className="flex justify-center md:justify-end">
+                <div className="flex justify-center lg:justify-end">
                     <a href="https://www.youtube.com/watch?v=28FX7u51v2U&feature=youtu.be" className="block">
                         <img
                             className="rounded-lg w-64"

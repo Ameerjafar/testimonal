@@ -7,7 +7,7 @@ import Footer from './Footer';
 
 export const Hero = () => {
     return (
-        <div>
+        <div className = ''>
             <AppBar />
             <div className="pt-20 px-4 text-center font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
                 <div>Get testimonials from your</div>
